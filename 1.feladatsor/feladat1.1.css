@@ -1,0 +1,25 @@
+.elemek {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.zold {
+    background-color: green;
+    flex: 1;
+    order: 1;
+}
+
+.sarga {
+    background-color: yellow;
+    order: 2;
+    flex: 1;
+}
+
+.lila {
+    background-color: purple;
+    order: 3;
+    flex: 1;
+}
