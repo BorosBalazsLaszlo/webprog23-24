@@ -7,27 +7,25 @@
 .elemek {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .header {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: row;
+    height: 80vh;
+    width: 40vw;
 }
 
 .cian {
     background-color: aqua;
-    display: flex;
-    width: 40%;
-    height: 10%;
 }
 
 .row {
-    height: auto;
-    width: auto;
+    height: 70%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sarga {
@@ -40,26 +38,30 @@
 
 .lila {
     background-color: purple;
-
-}
-
-.footer {
-    height: auto;
-    width: auto;
-    display: flex;
 }
 
 .kek {
     background-color: blue;
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    height: 10%;
+
 }
 
 .fekete {
     background-color: black;
-    display: flex;
     width: 30px;
     height: 30px;
+}
+
+div.header > div:first-child, div.header > div:last-child {
+    height: 15%;
+    width: 100%;
+}
+
+div.row > div:nth-child(2){
+    width: 60%;
+    height: 100%;
+}
+
+div.row > div:first-child, div.row > div:last-child {
+    height: 100%;
+    width: 12%;
 }
