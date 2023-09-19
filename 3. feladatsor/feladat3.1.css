@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.elemek {
+    width: 100vw;
+    height: 100vh;
+}
+
+.lila {
+    background-color: purple;
+    display: flex;
+    width: 100%;
+    height: 6%;
+}
+
+.cian {
+    background-color: aqua;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    align-self: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.row {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sarga {
+    background-color: yellow;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 3;
+}
+
+.zold {
+    background-color: green;
+    display: flex;
+    flex: 2;
+}

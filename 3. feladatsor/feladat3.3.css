@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.elemek {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.cian {
+    background-color: aqua;
+    display: flex;
+    width: 40%;
+    height: 10%;
+}
+
+.row {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sarga {
+    background-color: orange;
+}
+
+.piros {
+    background-color: red;
+}
+
+.lila {
+    background-color: purple;
+
+}
+
+.footer {
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+.kek {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 10%;
+}
+
+.fekete {
+    background-color: black;
+    display: flex;
+    width: 30px;
+    height: 30px;
+}

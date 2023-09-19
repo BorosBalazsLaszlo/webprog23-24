@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.elemek {
+    width: 100vw;
+    height: 100vh;
+}
+
+.lila {
+    background-color: purple;
+    display: flex;
+    width: 105%;
+    height: 6%;
+}
+
+.nav {
+    display: flex;
+    margin-left: 100px;
+}
+
+.cian {
+    background-color: aqua;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    align-self: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-direction: row;
+}
+
+.zold {
+    background-color: green;
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sarga {
+    background-color: yellow;
+    display: flex;
+    flex: 2;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.szurke {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    background-color: grey;
+    width: 120%;
+    height: 10%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
