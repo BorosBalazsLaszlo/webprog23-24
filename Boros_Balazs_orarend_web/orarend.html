@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orarend.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+    <title>Órarend</title>
+</head>
+<body>
+    <h1>A heti órarendem</h1>
+
+    <br>
+
+    
+    <div class="gomb">
+        <button id="changeStylesButton"><i class="gg-dark-mode"></i></button>
+        <script>
+            //Itt internetes segítséghez fordultam.
+          document.addEventListener("DOMContentLoaded", function() {
+            var isBackgroundChanged = false;
+            var flexItems = document.querySelectorAll(".flex-items");
+        
+            document.getElementById("changeStylesButton").addEventListener("click", function() {
+              flexItems.forEach(function(item) {
+                if (item.classList.contains("highlighted")) {
+                  item.classList.remove("highlighted");
+                } else {
+                  item.classList.add("highlighted");
+                }
+              });
+        
+              if (isBackgroundChanged) {
+                document.body.style.backgroundImage = 'url("feher.jpg")';
+              } else {
+                document.body.style.backgroundImage = 'url("fekete.jpg")'; 
+              }
+        
+              isBackgroundChanged = !isBackgroundChanged;
+            });
+          });
+        </script>
+        
+    </div>
+    <div class="felso">
+            <div class="elso">
+            <div class="flex-items" id="nap"><br>Hétfő</div>
+            <div class="flex-items">8:00 - 8:45 <br>Webfejl.<br>34</div>
+            <div class="flex-items">8:55 - 9:40 <br>Aszalfejl.<br>nylab</div>
+            <div class="flex-items">9:55 - 10:40 <br>Irodalom<br>14</div>
+            <div class="flex-items">10:50 - 11:35 <br>Történelem<br>13</div>
+            <div class="flex-items">11:45 - 12:30 <br>Állampolgári ism.<br>13</div>
+            <div class="flex-items">12:45 - 13:30 <br>IKT II.<br>tani.</div>
+            <div class="flex-items">13:40 - 14:25 <br>Angol<br>30</div>
+            <div class="flex-items">14:30 - 15:15 <br>IKT II.<br>31</div>
+        </div>
+
+        <div class="masodik">
+            <div class="flex-items" id="nap"><br>Kedd</div>
+            <div class="flex-items">8:00 - 8:45 <br>Lyukas - Emelt<br>--</div>
+            <div class="flex-items">8:55 - 9:40 <br>Webprog.<br>nylab</div>
+            <div class="flex-items">9:55 - 10:40 <br>Angol<br>K3</div>
+            <div class="flex-items">10:50 - 11:35 <br>Testnevelés<br>T</div>
+            <div class="flex-items">11:45 - 12:30 <br>Történelem<br>13</div>
+            <div class="flex-items">12:45 - 13:30 <br>Szakmai Angol<br>7</div>
+            <div class="flex-items">13:40 - 14:25 <br>Matematika<br>6</div>
+        </div>
+        
+        <div class="harmadik">
+            <div class="flex-items" id="nap"><br>Szerda</div>
+            <div class="flex-items">8:00 - 8:45 <br>Angol<br>zsibongó</div>
+            <div class="flex-items">8:55 - 9:40 <br>Matek érettségifelk.<br>13</div>
+            <div class="flex-items">9:55 - 10:40 <br>Matematika<br>6</div>
+            <div class="flex-items">10:50 - 11:35 <br>Szakmai Angol<br>5</div>
+            <div class="flex-items">11:45 - 12:30 <br>Aszalfejl<br>31</div>
+            <div class="flex-items">12:45 - 13:30 <br>Testnevelés<br>T</div>
+            <div class="flex-items">13:40 - 14:25 <br>Lyukas<br>--</div>
+            <div class="flex-items">14:30 - 15:15 <br>Tánc<br>T</div>
+        </div>
+
+        <div class="negyedik">
+            <div class="flex-items" id="nap"><br>Csütörtök</div>
+            <div class="flex-items">8:00 - 8:45 <br>Lyukas - Emelt<br>--</div>
+            <div class="flex-items">8:55 - 9:40 <br>Webprog<br>Szt2</div>
+            <div class="flex-items">9:55 - 10:40 <br>Aszalfejl.<br>Szt2</div>
+            <div class="flex-items">10:50 - 11:35 <br>Testnevelés<br>T</div>
+            <div class="flex-items">11:45 - 12:30 <br>Nyelvtan<br>13</div>
+            <div class="flex-items">12:45 - 13:30 <br>Német<br>15</div>
+            <div class="flex-items">13:40 - 14:25 <br>Lyukas <br> --</div>
+            <div class="flex-items">15:15 - 18:15 <br> Szoftver-Teszt. <br> 13-as</div>
+        </div>
+
+        <div class="otodik">
+            <div class="flex-items" id="nap"><br>Péntek</div>
+            <div class="flex-items">8:00 - 8:45 <br>Angol<br>15</div>
+            <div class="flex-items">8:55 - 9:40 <br>Irodalom<br>14</div>
+            <div class="flex-items">9:55 - 10:40 <br>Történelem<br>13</div>
+            <div class="flex-items">10:50 - 11:35 <br>Matematika<br>6</div>
+            <div class="flex-items">11:45 - 12:30 <br>Szakmai Angol <br>32</div>
+            <div class="flex-items">12:45 - 13:30 <br>Aszalfejl.<br>Szt2</div>
+        </div>
+    </div>
+
+    <div class="also">
+        <div class="hatodik">
+            <div class="flex-items" id="nap"><br>Szombat</div>
+            <div class="flex-items">16:00 - 18:00 <br> Edzés <br> "A" hét szerint</div>
+            <div class="flex-items">Pihenés <br> vagy <br> Tanulás</div>
+        </div>
+
+        <div class="hetedik">
+            <div class="flex-items" id="nap"><br>Vasárnap</div>
+            <div class="flex-items">Pihenés <br> vagy <br> Tanulás</div>
+            <div class="flex-items">Pihenés <br> vagy <br> Tanulás</div>
+
+        </div>
+    </div>
+</body>
+</html>
