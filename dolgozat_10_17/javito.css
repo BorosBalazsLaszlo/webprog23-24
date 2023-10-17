@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    background-color: bisque;
+    width: 60vw;
+    height: 60vh;
+    margin-left: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    width: 40%;
+    height: 40%;
+    align-self: center;
+}
+
+#item1 {
+    background-color: brown;
+}
+#item2 {
+    background-color: sienna;
+}
+
+#item3 {
+    background-color: lightcoral;
+}
