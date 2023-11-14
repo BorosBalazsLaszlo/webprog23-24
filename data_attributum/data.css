@@ -3,17 +3,27 @@
     padding: 0;
 }
 
-.container {
-    width: 150px;
-    height: 150px;
-    background-color: teal;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+#container {
+    width: 900px; 
+    height: 900px; 
+    background-color: rgb(109, 194, 194);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .cell {
-    width: 50px;
-    height: 50px;
+    width: 300px; 
+    height: 300px; 
     background-color: yellow;
-    margin: 2px;
-    display: inline-block;
-
+    margin: 10px;
 }
