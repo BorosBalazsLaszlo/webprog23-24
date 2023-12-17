@@ -7,7 +7,11 @@
 body {
     height: 100vh;
     display: flex;
-    background-color: bisque;
+    
+background: #091428;
+background: radial-gradient(ellipse farthest-corner at center center, #091428 0%, #0a323c 40%, #785a28 80%);
+background: -webkit-radial-gradient(ellipse farthest-corner at center center, #091428 0%, #0a323c 40%, #785a28 80%);
+background: -moz-radial-gradient(ellipse farthest-corner at center center, #091428 0%, #0a323c 40%, #785a28 80%);
 }
 
 .game {
@@ -35,9 +39,12 @@ body {
   height: 100%;
   padding: 20px;
   position: absolute;
-  border-radius: 5px;
-  background: powderblue;
+  border-radius: 30px;
+  background: #A09B8C;
   backface-visibility: hidden;
+  box-shadow: 10px 10px 58px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 58px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 58px 0px rgba(0,0,0,0.75);
 }
 
 .back-face {
@@ -51,4 +58,15 @@ body {
 
 .card.flip {
     transform: rotateY(180deg);
+}
+
+#stopper-display {
+    position: fixed;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #A09B8C;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
 }
