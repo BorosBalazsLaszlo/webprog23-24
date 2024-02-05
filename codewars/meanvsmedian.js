@@ -1,6 +1,6 @@
 function meanVsMedian(numbers)
 {
-    let mean = numbers.sum / numbers.length;
+    const mean = numbers.reduce((acc, curr) => acc + curr, 0) / numbers.length;
     let median = 0;
     const mid = Math.floor(numbers.length / 2);
     const sorted = numbers.sort((a, b) => a - b);
