@@ -4,12 +4,12 @@ def fibonacci(n: int) -> int:
     if n == 1:
         return 1
 
-    prev = 0
-    current = 1
+    elozo = 0
+    jelenlegi = 1
 
     for _ in range(2, n + 1):
-        next_num = prev + current
-        prev = current
-        current = next_num
+        kovetkezo = elozo + jelenlegi
+        elozo = jelenlegi
+        jelenlegi = kovetkezo
 
-    return current
+    return jelenlegi
