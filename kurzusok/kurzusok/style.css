@@ -1,0 +1,20 @@
+.student-main{
+    display: inline-block;
+    background-color: lightblue;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.coursecreate{
+    background-color: bisque;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.button{
+    margin: 20px;
+
+}
