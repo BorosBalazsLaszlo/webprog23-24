@@ -1,9 +1,9 @@
 function ownedCatAndDog(catYears, dogYears) {
     function getHumanYears(petYears, firstYear, secondYear, subsequentYears) {
         if (petYears < firstYear) {
-            return 0; // less than one human year
+            return 0;
         } else if (petYears < firstYear + secondYear) {
-            return 1; // between one and two human years
+            return 1;
         } else {
             return 2 + Math.floor((petYears - firstYear - secondYear) / subsequentYears);
         }
