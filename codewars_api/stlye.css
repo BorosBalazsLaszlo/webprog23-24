@@ -71,7 +71,7 @@ button:hover {
 .summary {
     width: 60%;
     max-width: 500px;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
 .summary div {
