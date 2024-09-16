@@ -6,7 +6,7 @@ document.getElementById('fetchData').addEventListener('click', () => {
     .then(response => {
         if (!response.ok) {
             if (response.status === 404) {
-                throw new Error('Adat hiba. A felhasználó nem található.');
+                window.location.href = '404.html';
             } else if (response.status === 500) {
                 throw new Error('Szerver hiba.');
             } else {
